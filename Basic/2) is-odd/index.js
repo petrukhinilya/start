@@ -1,5 +1,10 @@
 function isOdd(a) {
-  //код сюда
+  if(a%2 == 0){
+    return true
+}
+else{
+    return false
+}
 }
 
 window.isOdd = isOdd;

@@ -1,5 +1,8 @@
 function searchString(obj) {
-  // код сюда
+  let arr = Object.entries(obj)
+  let str = arr.join("")
+  return str
+
 }
 
 window.searchString = searchString;

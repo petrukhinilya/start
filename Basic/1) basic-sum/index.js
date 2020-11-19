@@ -1,5 +1,6 @@
 function sum(a, b) {
-  //код сюда
+  let num = a + b;
+  return num
 };
 
 window.sum = sum;
