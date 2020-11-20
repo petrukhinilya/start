@@ -1,5 +1,11 @@
 function asyncSum(a, b) {
-  // код сюда
+  let sum = a + b;
+  return new Promise(function(resolve, reject){
+    setTimeout(() => resolve(         ), 1000);
+    if(typeof(a) !== 'number' && typeof(b) !== 'number'){
+      return reject()
+    }
+  })
 }
 
 window.asyncSum = asyncSum;
