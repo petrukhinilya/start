@@ -18,7 +18,28 @@
  */
 
 class Stack {
-  // код сюда
+  constructor(){
+    this.items = []
+  }
+  push(elem){
+    this.item.push(elem)
+  }
+  pop(){
+    if(this.items.length == 0){
+      return "Stack is empty"
+    }
+    return this.items.pop()
+  }
+  isEmpty(){
+    return this.items.length == 0; 
+  }
+  print(){
+    size: this.items.length
+    let str = "";
+    for (var i = 0; i < this.items.length; i++)
+        str += this.items[i] + " ";
+    return str; 
+  }
 }
 
 window.Stack = Stack;

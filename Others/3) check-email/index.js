@@ -13,7 +13,12 @@
  */
 
 function isValidEmail(email) {
-  // код сюда
+  let result = email.search(/@gmail.com/);
+  if(result == -1){
+    return false
+  } else {
+    return true
+  }
 }
 
 window.isValidEmail = isValidEmail;
