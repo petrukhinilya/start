@@ -8,7 +8,31 @@
  */
 
 class TokenService {
-  // код сюда
+  constructor(){
+    this.items =[]
+    this.token = null
+    this.callback = null
+  }
+  subscribe(callback){
+    // callback(this.token)
+    this.callback = callback
+  }
+  setToken(token){
+    this.token =token
+    if(this.callback){
+      this.callback(this.token)
+    }
+  }
+  removeToken(){
+    this.token = null
+    if(this.callback){
+      this.callback(null)
+    }
+    // 
+  }
+  getToken(){
+    return this.token
+  }
 }
 
 window.TokenService = TokenService;

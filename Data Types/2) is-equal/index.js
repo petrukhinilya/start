@@ -1,9 +1,14 @@
 function isEqual(a, b) {
-  let obj1 =JSON.stringify(a);
-  let obj2 =JSON.stringify(b);
-  if (obj1 === obj2){
-    return true
-  }
+  if (a === b) {
+    return true;
+}
+
+if (a == null || typeof(a) != "object" ||
+    b == null || typeof(b) != "object")
+{
+    return false;
+}
+
 }
 
 window.isEqual = isEqual;
